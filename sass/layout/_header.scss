@@ -1,0 +1,32 @@
+.header {
+  height: 100vh;
+  background-image: linear-gradient(to right top, rgb(1, 26, 52), transparent),
+    url(../img/hero/hero-1-large.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__logo {
+    height: 6rem;
+  }
+
+  &__text-box {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  }
+
+  &__buttons-box {
+
+  }
+
+  &__slide-buttons-box {
+
+  }
+}

@@ -1,0 +1,64 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.2; }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase; }
+  .heading-primary--main {
+    display: block;
+    width: 75%;
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    margin-bottom: 1.6rem; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.3rem; }
+
+.btn, .btn:link, .btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1.2rem 2.4rem;
+  border-radius: 10rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem; }
+
+.btn--outlined {
+  box-shadow: inset 0 0 0 1px #fff;
+  color: #fff; }
+
+.btn--full {
+  background-color: #fff;
+  color: #063460; }
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(to right top, #011a34, transparent), url(../img/hero/hero-1-large.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 6rem; }
+  .header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 10%; }
