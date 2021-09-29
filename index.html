@@ -12,12 +12,41 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="css/icon-font.css" />
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Sealife - самый большой океанариум Москвы</title>
   </head>
   <body>
     <header class="header">
+      <div class="header__slideshow-container">
+        <div class="header__slide fade">
+          <img
+            src="img/hero/hero-1-large.jpg"
+            class="header__slide-img"
+            alt="Семья в океанариуме."
+          />
+        </div>
+
+        <div class="header__slide fade">
+          <img
+            src="img/hero/hero-2-large.jpg"
+            class="header__slide-img"
+            alt="Акула плавает за стеклом."
+          />
+        </div>
+
+        <div class="header__slide fade">
+          <img
+            src="img/hero/hero-3-large.jpg"
+            class="header__slide-img"
+            alt="Посетители на экскурсии в океанариуме."
+          />
+        </div>
+
+        <div class="header__slide-img-layer"></div>
+      </div>
+
       <div class="header__logo-box">
         <img src="img/logo.png" alt="logo" class="header__logo" />
       </div>
@@ -34,13 +63,141 @@
           <a href="#" class="btn btn--outlined btn--animated">Купить билет</a>
           <a href="#" class="btn btn--full btn--animated">Узнать больше</a>
         </div>
+      </div>
 
-        <div class="header__slide-buttons-box">
-          <a href="#" class="btn btn--slide">&nbsp;</a>
-          <a href="#" class="btn btn--slide">&nbsp;</a>
-          <a href="#" class="btn btn--slide">&nbsp;</a>
-        </div>
+      <div class="header__slide-buttons-box">
+        <span class="header__dot" onclick="currentSlide(1)"></span>
+        <span class="header__dot" onclick="currentSlide(2)"></span>
+        <span class="header__dot" onclick="currentSlide(3)"></span>
       </div>
     </header>
+
+    <main>
+      <div class="section-shows">
+        <div class="container">
+          <h2 class="heading-secondary">Афиша</h2>
+          <div class="section-shows__grid">
+            <span class="show__arrow show__arrow--up">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7l4-4m0 0l4 4m-4-4v18"
+                />
+              </svg>
+            </span>
+
+            <div class="show">
+              <div class="show__img-box">
+                <img
+                  src="img/show/show-1-big.jpg"
+                  alt="Дайвер со скатом."
+                  class="show__img"
+                />
+                <div class="show__layer"></div>
+              </div>
+              <div class="show__text-box">
+                <h3 class="heading-tertiary">
+                  Скаты - удивительные рыбы птицы
+                </h3>
+                <div class="show__details">
+                  <i class="show__calendar-icon icon-basic-calendar"></i>
+                  <p class="show__dates">3 - 15 Октября</p>
+                  <a href="#" class="btn btn--outlined">Подробнее</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="show">
+              <div class="show__img-box">
+                <img
+                  src="img/show/show-2-big.jpg"
+                  alt="Дайвер со скатом."
+                  class="show__img"
+                />
+                <div class="show__layer"></div>
+              </div>
+              <div class="show__text-box">
+                <h3 class="heading-tertiary">
+                  Грозные и милые: почему исчезают белые медведи
+                </h3>
+                <div class="show__details">
+                  <i class="show__calendar-icon icon-basic-calendar"></i>
+                  <p class="show__dates">10 - 30 Октября</p>
+                  <a href="#" class="btn btn--outlined">Подробнее</a>
+                </div>
+              </div>
+            </div>
+
+            <span class="show__arrow show__arrow--down">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 17l-4 4m0 0l-4-4m4 4V3"
+                />
+              </svg>
+            </span>
+
+            <div class="show">
+              <div class="show__img-box">
+                <img
+                  src="img/show/show-3-big.jpg"
+                  alt="Дайвер со скатом."
+                  class="show__img"
+                />
+                <div class="show__layer"></div>
+              </div>
+              <div class="show__text-box">
+                <h3 class="heading-tertiary">
+                  Морские коньки и их “семейная жизнь”
+                </h3>
+                <div class="show__details">
+                  <i class="show__calendar-icon icon-basic-calendar"></i>
+                  <p class="show__dates">15 - 25 Октября</p>
+                  <a href="#" class="btn btn--outlined">Подробнее</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="show">
+              <div class="show__img-box">
+                <img
+                  src="img/show/show-4-big.jpg"
+                  alt="Дайвер со скатом."
+                  class="show__img"
+                />
+                <div class="show__layer"></div>
+              </div>
+              <div class="show__text-box">
+                <h3 class="heading-tertiary">
+                  Акулы: могли ли выжить герои фильма “Челюсти”
+                </h3>
+                <div class="show__details">
+                  <i class="show__calendar-icon icon-basic-calendar"></i>
+                  <p class="show__dates">15 - 25 Октября</p>
+                  <a href="#" class="btn btn--outlined">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script defer src="js/script.js"></script>
   </body>
 </html>

@@ -4,22 +4,61 @@
   &:visited {
     display: inline-block;
     text-decoration: none;
-    padding: 1.2rem 2.4rem;
     border-radius: 10rem;
-    font-size: $default-font-size;
     font-weight: 700;
     letter-spacing: 0.1rem;
+    position: relative;
+    transition: all 0.3s;
+    z-index: 1000;
+  }
 
-    //Change for the <button> element
+  &:hover,
+  &:active {
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+      background-color: $color-white;
+    }
   }
 
   &--outlined {
-    box-shadow: inset 0 0 0 1px $color-white;
+    font-size: 1.8rem;
+    border: solid 1px $color-white;
+    padding: 1.2rem 2.4rem;
     color: $color-white;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-dark-blue;
+    }
   }
 
   &--full {
+    font-size: 1.8rem;
     background-color: $color-white;
+    padding: 1.2rem 2.4rem;
     color: $color-dark-blue;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.6s;
   }
 }

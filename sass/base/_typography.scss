@@ -1,11 +1,11 @@
 body {
   font-family: "Roboto", sans-serif;
+  color: $color-white;
   font-weight: 400;
   line-height: 1.2;
 }
 
 .heading-primary {
-  color:$color-white;
   text-transform: uppercase;
 
   &--main {
@@ -15,6 +15,8 @@ body {
     font-weight: 700;
     letter-spacing: 0.5rem;
     margin-bottom: 1.6rem;
+
+    animation: moveInLeft 1s ease-out;
   }
 
   &--sub {
@@ -22,5 +24,24 @@ body {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 0.3rem;
+    margin-bottom: 4.8rem;
+
+    animation: moveInRight 1s ease-out;
   }
+}
+
+.heading-secondary {
+  font-size: 3.6rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  margin-bottom: 4.8rem;
+}
+
+.heading-tertiary {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 0.15rem;
+  margin-bottom: 1.8rem;
+
+  width: 65%;
 }
