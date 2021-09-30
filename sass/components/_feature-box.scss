@@ -1,0 +1,38 @@
+.feature-box {
+  padding: 3.6rem 2.4rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  background-image: linear-gradient(
+    to top right,
+    rgba(54, 187, 205, 0.5),
+    rgba(22, 57, 82, 0.5)
+  );
+  box-shadow: 2rem 4rem 8rem rgba($color-black, 0.15);
+  transition: all .3s;
+
+  &:last-of-type &__icon {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  &__icon {
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    fill: $color-white;
+    align-self: center;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+}

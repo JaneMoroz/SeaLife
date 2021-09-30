@@ -28,11 +28,12 @@
 
   &__img-box {
     position: relative;
+    border-radius: 1.5rem;
+    overflow: hidden;
   }
 
   &__img {
     width: 100%;
-    border-radius: 1.5rem;
   }
 
   &__layer {
@@ -44,13 +45,16 @@
     width: 100%;
     background-image: linear-gradient(to top, #011a34, #36f9d3);
     opacity: 0.5;
-    border-radius: 1.5rem;
   }
 
   &__text-box {
     position: absolute;
     bottom: 10%;
     left: 5%;
+  }
+
+  &__heading {
+    width: 65%;
   }
 
   &__details {
