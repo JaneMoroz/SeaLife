@@ -235,7 +235,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 40rem;
+    width: 35%;
     border-radius: 1.5rem;
     overflow: hidden;
     box-shadow: 2rem 4rem 8rem rgba(0, 0, 0, 0.15);
@@ -249,8 +249,8 @@ body {
     .gallery__item--4 {
       transform: translate(30%, 220%); }
     .gallery__item--5 {
-      width: 35rem;
-      transform: translate(230%, 60%); }
+      width: 30%;
+      transform: translate(240%, 60%); }
     .gallery__item:hover {
       z-index: 20;
       box-shadow: 4rem 8rem 8rem rgba(0, 0, 0, 0.15); }
