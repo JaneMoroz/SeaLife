@@ -15,24 +15,24 @@
     z-index: 10;
 
     &--1 {
-      transform: translate(100%, 50%);
+      transform: translate(90%, 40%);
     }
 
     &--2 {
-      transform: translate(20%, 90%);
+      transform: translate(0%, 70%);
     }
 
     &--3 {
-      transform: translate(110%, 180%);
+      transform: translate(130%, 190%);
     }
 
     &--4 {
-      transform: translate(30%, 220%);
+      transform: translate(40%, 160%);
     }
 
     &--5 {
       width: 30%;
-      transform: translate(240%, 60%);
+      transform: translate(215%, 40%);
     }
 
     &:hover {
@@ -75,7 +75,7 @@
     top: 0;
     left: 0;
     transform: translateY(100%);
-    padding: 3.6rem;
+    padding: 3.6rem 4.8rem;
     font-size: 1.6rem;
     line-height: 1.6;
     letter-spacing: 0.1rem;

@@ -206,7 +206,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
-  background-image: linear-gradient(to top right, rgba(54, 187, 205, 0.5), rgba(22, 57, 82, 0.5));
+  border: 1px solid #fff;
+  border-radius: 1.3rem;
   box-shadow: 2rem 4rem 8rem rgba(0, 0, 0, 0.15);
   transition: all .3s; }
   .feature-box:last-of-type .feature-box__icon {
@@ -241,16 +242,16 @@ body {
     box-shadow: 2rem 4rem 8rem rgba(0, 0, 0, 0.15);
     z-index: 10; }
     .gallery__item--1 {
-      transform: translate(100%, 50%); }
+      transform: translate(90%, 40%); }
     .gallery__item--2 {
-      transform: translate(20%, 90%); }
+      transform: translate(0%, 70%); }
     .gallery__item--3 {
-      transform: translate(110%, 180%); }
+      transform: translate(130%, 190%); }
     .gallery__item--4 {
-      transform: translate(30%, 220%); }
+      transform: translate(40%, 160%); }
     .gallery__item--5 {
       width: 30%;
-      transform: translate(240%, 60%); }
+      transform: translate(215%, 40%); }
     .gallery__item:hover {
       z-index: 20;
       box-shadow: 4rem 8rem 8rem rgba(0, 0, 0, 0.15); }
@@ -276,7 +277,7 @@ body {
     top: 0;
     left: 0;
     transform: translateY(100%);
-    padding: 3.6rem;
+    padding: 3.6rem 4.8rem;
     font-size: 1.6rem;
     line-height: 1.6;
     letter-spacing: 0.1rem;
@@ -307,6 +308,7 @@ body {
   opacity: .4; }
   .video__content {
     width: 100%;
+    height: 100%;
     object-fit: cover; }
 
 .price-box {
@@ -316,6 +318,7 @@ body {
   padding: 4.8rem 3.2rem;
   background-image: linear-gradient(to bottom left, rgba(22, 57, 82, 0.7), rgba(54, 187, 205, 0.7));
   box-shadow: 4rem 4rem 8rem rgba(0, 0, 0, 0.5);
+  border-radius: 1.3rem;
   transition: all .3s; }
   .price-box--1 {
     justify-self: flex-end; }
@@ -408,10 +411,12 @@ body {
   background-color: #fff; }
 
 .footer {
-  padding: 19.6rem 0 3.2rem 0; }
+  background-image: linear-gradient(to right, rgba(15, 39, 85, 0.95), rgba(11, 78, 82, 0.95)), url(../img/footer-large.jpg);
+  background-size: cover; }
   .footer__logo-box {
     text-align: center;
-    margin-bottom: 8rem; }
+    margin-bottom: 8rem;
+    padding-top: 9.6rem; }
   .footer__logo {
     height: 5rem; }
   .footer__grid {
@@ -446,13 +451,137 @@ body {
     height: 3.2rem;
     width: 3.2rem; }
 
+.navigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 35rem;
+  height: 100vh;
+  z-index: 1000; }
+  .navigation__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(to top, rgba(1, 26, 52, 0.9), rgba(54, 249, 211, 0.3));
+    width: 7rem;
+    height: 100vh;
+    transition: all .3s; }
+  .navigation__checkbox {
+    display: none; }
+  .navigation__button {
+    position: absolute;
+    top: 2%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    height: 7rem;
+    width: 7rem;
+    z-index: 2000;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s; }
+    .navigation__button:hover {
+      transform: scale(1.2); }
+  .navigation__icon {
+    position: relative;
+    left: 1.6rem; }
+    .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+      background-color: #fff;
+      height: 3px;
+      display: inline-block; }
+    .navigation__icon::before, .navigation__icon::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.2s; }
+    .navigation__icon {
+      width: 3rem; }
+    .navigation__icon::before {
+      width: 4rem;
+      top: -1.2rem; }
+    .navigation__icon::after {
+      width: 2rem;
+      top: 1.2rem; }
+  .navigation__social-links {
+    position: absolute;
+    bottom: 10%;
+    right: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem; }
+  .navigation__social-link:link, .navigation__social-link:visited {
+    padding: 1.2rem;
+    display: inline-block;
+    transition: all 0.3s; }
+  .navigation__social-link:hover, .navigation__social-link:active {
+    transform: scale(1.1); }
+  .navigation__social-link ion-icon {
+    color: #fff;
+    height: 3.2rem;
+    width: 3.2rem; }
+  .navigation__list {
+    position: absolute;
+    top: 20%;
+    right: 30%;
+    transform: translateX(170%);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    opacity: 0;
+    transition: all .5s; }
+  .navigation__link:link, .navigation__link:visited {
+    display: inline-block;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s; }
+  .navigation__link:hover, .navigation__link:active {
+    transform: scale(1.1); }
+  .navigation__additional-list {
+    position: absolute;
+    bottom: 13%;
+    right: 20%;
+    transform: translateX(170%);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    opacity: 0;
+    transition: all .5s; }
+  .navigation__additional-item {
+    width: 75%; }
+  .navigation__additional-link:link, .navigation__additional-link:visited {
+    display: inline-block;
+    line-height: 1.6;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s; }
+  .navigation__additional-link:hover, .navigation__additional-link:active {
+    transform: scale(1.1); }
+  .navigation__checkbox:checked ~ .navigation__background {
+    width: 35rem; }
+  .navigation__checkbox:checked ~ .navigation__nav .navigation__list {
+    transform: translateX(0);
+    opacity: 1; }
+  .navigation__checkbox:checked ~ .navigation__nav .navigation__additional-list {
+    transform: translateX(10%);
+    opacity: 1; }
+  .navigation__checkbox:checked ~ .navigation__button {
+    transform: rotate(-90deg); }
+
 .section-shows {
-  padding: 9.6rem 0 12.4rem 0; }
+  padding: 9.6rem 5.6rem 12.4rem 3.2rem; }
   .section-shows__grid {
     display: grid;
     grid-template-columns: 1fr 4fr 4fr;
     row-gap: 8rem;
-    column-gap: 12rem; }
+    column-gap: 6.4rem; }
 
 .section-about {
   margin-top: 3.2rem;
@@ -470,7 +599,8 @@ body {
   .section-diving__features {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-items: center; }
+    justify-items: center;
+    padding: 0 6.4rem; }
 
 .section-prices {
   position: relative; }

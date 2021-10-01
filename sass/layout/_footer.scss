@@ -1,9 +1,16 @@
 .footer {
-  padding: 19.6rem 0 3.2rem 0;
+  background-image: linear-gradient(
+      to right,
+      rgba(15, 39, 85, 0.95),
+      rgba(11, 78, 82, 0.95)
+    ),
+    url(../img/footer-large.jpg);
+    background-size: cover;
 
   &__logo-box {
     text-align: center;
     margin-bottom: 8rem;
+    padding-top: 9.6rem;
   }
 
   &__logo {

@@ -1,0 +1,197 @@
+.navigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 35rem;
+  height: 100vh;
+  z-index: 1000;
+
+  &__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(
+      to top,
+      rgba(1, 26, 52, 0.9),
+      rgba(54, 249, 211, 0.3)
+    );
+    // width: 35rem;
+    width: 7rem;
+    height: 100vh;
+    transition: all .3s;
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__button {
+    position: absolute;
+    top: 2%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    height: 7rem;
+    width: 7rem;
+    z-index: 2000;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__icon {
+    position: relative;
+    left: 1.6rem;
+
+    &,
+    &::before,
+    &::after {
+      background-color: $color-white;
+      height: 3px;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.2s;
+    }
+
+    & {
+      width: 3rem;
+    }
+
+    &::before {
+      width: 4rem;
+      top: -1.2rem;
+    }
+
+    &::after {
+      width: 2rem;
+      top: 1.2rem;
+    }
+  }
+
+  &__social-links {
+    position: absolute;
+    bottom: 10%;
+    right: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  &__social-link {
+    &:link,
+    &:visited {
+      padding: 1.2rem;
+      display: inline-block;
+      transition: all 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      transform: scale(1.1);
+    }
+  }
+
+  &__social-link ion-icon {
+    color: #fff;
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+
+  &__nav {
+  }
+
+  &__list {
+    position: absolute;
+    top: 20%;
+    right: 30%;
+    transform: translateX(170%);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    opacity: 0;
+    transition: all .5s;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: $color-white;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      transform: scale(1.1);
+    }
+  }
+
+  &__additional-list {
+    position: absolute;
+    bottom: 13%;
+    right: 20%;
+    transform: translateX(170%);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    opacity: 0;
+    transition: all .5s;
+  }
+
+  &__additional-item {
+    width: 75%;
+  }
+
+  &__additional-link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      line-height: 1.6;
+      font-size: 1.6rem;
+      font-weight: 400;
+      letter-spacing: 0.2rem;
+      color: $color-white;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      transform: scale(1.1);
+    }
+  }
+
+  //FUNCTIONALITY
+  &__checkbox:checked ~ &__background {
+    width: 35rem;
+  }
+
+  &__checkbox:checked ~ &__nav &__list {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  &__checkbox:checked ~ &__nav &__additional-list {
+    transform: translateX(10%);
+    opacity: 1;
+  }
+
+  &__checkbox:checked ~ &__button {
+    transform: rotate(-90deg);
+  }
+}
