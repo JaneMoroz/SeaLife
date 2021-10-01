@@ -6,14 +6,12 @@
   gap: 2.4rem;
   border: 1px solid $color-white;
   border-radius: 1.3rem;
-
-  // background-image: linear-gradient(
-  //   to top right,
-  //   rgba(54, 187, 205, 0.5),
-  //   rgba(22, 57, 82, 0.5)
-  // );
   box-shadow: 2rem 4rem 8rem rgba($color-black, 0.15);
-  transition: all .3s;
+  transition: all 0.3s;
+
+  @include respond(tab-port) {
+    width: 75%;
+  }
 
   &:last-of-type &__icon {
     width: 10rem;

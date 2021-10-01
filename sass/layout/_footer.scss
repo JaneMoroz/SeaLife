@@ -5,7 +5,7 @@
       rgba(11, 78, 82, 0.95)
     ),
     url(../img/footer-large.jpg);
-    background-size: cover;
+  background-size: cover;
 
   &__logo-box {
     text-align: center;
@@ -21,6 +21,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 0.6fr 1fr;
     gap: 5.6rem;
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   &__column-title {

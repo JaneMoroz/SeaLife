@@ -2,6 +2,10 @@
   height: 100vh;
   position: relative;
 
+  @include respond(tab-land) {
+    height: 100%;
+  }
+
   &__slide {
     display: none;
   }
@@ -9,6 +13,10 @@
   &__slide-img {
     height: 100vh;
     width: 100%;
+
+    @include respond(tab-land) {
+      height: 100%;
+    }
   }
 
   &__slide-img-layer {
@@ -18,17 +26,30 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(to right top, rgb(1, 26, 52), transparent);
+    background-image: linear-gradient(
+      to right top,
+      rgb(1, 26, 52),
+      transparent
+    );
   }
 
   &__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem;
+
+    @include respond(phone) {
+      top: 1rem;
+      left: 1rem;
+    }
   }
 
   &__logo {
     height: 5rem;
+
+    @include respond(phone) {
+      height: 2rem;
+    }
   }
 
   &__text-box {

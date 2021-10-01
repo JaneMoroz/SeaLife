@@ -17,11 +17,25 @@
       &:hover {
         transform: translateY(-10px);
       }
+
+      @include respond(tab-port) {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        align-self: start;
+        padding-top: 6.4rem;
+      }
     }
 
     &--down {
       &:hover {
         transform: translateY(10px);
+      }
+
+      @include respond(tab-port) {
+        grid-column: 1;
+        grid-row: 3 / span 2;
+        align-self: end;
+        padding-bottom: 6.4rem;
       }
     }
   }
@@ -51,6 +65,10 @@
     position: absolute;
     bottom: 10%;
     left: 5%;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
   }
 
   &__heading {
@@ -75,5 +93,9 @@
   &__dates {
     font-size: 1.8rem;
     font-weight: 700;
+
+    @include respond(phone) {
+      font-size: 1.4rem;
+    }
   }
 }

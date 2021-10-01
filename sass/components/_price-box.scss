@@ -3,17 +3,33 @@
   flex-direction: column;
   gap: 3.2rem;
   padding: 4.8rem 3.2rem;
-  background-image: linear-gradient(to bottom left, rgba(22, 57, 82, .7), rgba(54, 187, 205, .7));
+  background-image: linear-gradient(
+    to bottom left,
+    rgba(22, 57, 82, 0.7),
+    rgba(54, 187, 205, 0.7)
+  );
   box-shadow: 4rem 4rem 8rem rgba($color-black, 0.5);
   border-radius: 1.3rem;
-  transition: all .3s;
+  transition: all 0.3s;
+
+  @include respond(tab-port) {
+    padding: 3.2rem 2.4rem;
+  }
 
   &--1 {
     justify-self: flex-end;
+
+    @include respond(phone) {
+      justify-self: center;
+    }
   }
 
   &--2 {
     justify-self: flex-start;
+
+    @include respond(phone) {
+      justify-self: center;
+    }
   }
 
   &__title {

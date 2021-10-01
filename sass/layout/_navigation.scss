@@ -2,12 +2,11 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 35rem;
   height: 100vh;
-  z-index: 1000;
+  z-index: 2000;
 
   &__background {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     background-image: linear-gradient(
@@ -18,7 +17,7 @@
     // width: 35rem;
     width: 7rem;
     height: 100vh;
-    transition: all .3s;
+    transition: all 0.3s;
   }
 
   &__checkbox {
@@ -119,7 +118,7 @@
     flex-direction: column;
     gap: 4.8rem;
     opacity: 0;
-    transition: all .5s;
+    transition: all 0.5s;
   }
 
   &__link {
@@ -150,7 +149,7 @@
     flex-direction: column;
     gap: 3.2rem;
     opacity: 0;
-    transition: all .5s;
+    transition: all 0.5s;
   }
 
   &__additional-item {
@@ -179,14 +178,27 @@
   //FUNCTIONALITY
   &__checkbox:checked ~ &__background {
     width: 35rem;
+
+    @include respond(phone) {
+      width: 100vh;
+      background-image: linear-gradient(
+        to top,
+        rgba(1, 26, 52, 0.9),
+        rgba(54, 249, 211, 0.9)
+      );
+    }
   }
 
-  &__checkbox:checked ~ &__nav &__list {
+  &__checkbox:checked ~ &__background &__nav &__list {
     transform: translateX(0);
     opacity: 1;
+
+    @include respond(phone) {
+     transform: translateX(55%);
+    }
   }
 
-  &__checkbox:checked ~ &__nav &__additional-list {
+  &__checkbox:checked ~ &__background &__nav &__additional-list {
     transform: translateX(10%);
     opacity: 1;
   }
