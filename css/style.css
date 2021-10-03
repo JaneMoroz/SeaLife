@@ -32,6 +32,18 @@
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes bubblesAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(0); }
+  50% {
+    opacity: 0.4; }
+  70% {
+    opacity: 0.4; }
+  100% {
+    opacity: 0;
+    transform: translateY(-80vh); } }
+
 *,
 *::after,
 *::before {
@@ -491,6 +503,44 @@ body {
   padding: 0 3.2rem;
   margin: 0 auto; }
 
+.bubbles {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: -7rem;
+  z-index: 5000; }
+
+.bubbles img {
+  width: 50px;
+  animation: bubblesAnimation 7s linear infinite; }
+
+.bubbles img:nth-child(1) {
+  animation-delay: 2s;
+  width: 25px; }
+
+.bubbles img:nth-child(2) {
+  animation-delay: 1s; }
+
+.bubbles img:nth-child(3) {
+  animation-delay: 3s;
+  width: 25px; }
+
+.bubbles img:nth-child(4) {
+  animation-delay: 4.5s; }
+
+.bubbles img:nth-child(5) {
+  animation-delay: 3s; }
+
+.bubbles img:nth-child(6) {
+  animation-delay: 6s;
+  width: 20px; }
+
+.bubbles img:nth-child(7) {
+  animation-delay: 7s;
+  width: 35px; }
+
 .header {
   height: 100vh;
   position: relative; }
@@ -757,12 +807,9 @@ body {
 
 .section-about {
   margin-top: 3.2rem;
-  background-image: linear-gradient(to bottom right, rgba(1, 26, 52, 0.7), rgba(54, 249, 211, 0.7)), url(../img/about-small.jpg); }
+  background-image: linear-gradient(to bottom right, rgba(1, 26, 52, 0.7), rgba(54, 249, 211, 0.7)), url(../img/about-large.jpg); }
   .section-about__text-box {
     padding: 9.6rem 3.2rem; }
-  @media (min-resolution: 192dpi) and (min-width: 37.6em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em) {
-    .section-about {
-      background-image: linear-gradient(to bottom right, rgba(1, 26, 52, 0.7), rgba(54, 249, 211, 0.7)), url(../img/about-large.jpg); } }
 
 .section-diving {
   padding: 9.6rem 0; }

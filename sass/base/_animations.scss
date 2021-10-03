@@ -50,3 +50,23 @@
     transform: translate(0);
   }
 }
+
+@keyframes bubblesAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  70% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-80vh);
+  }
+}
