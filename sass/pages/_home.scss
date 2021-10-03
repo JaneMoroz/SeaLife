@@ -28,10 +28,20 @@
       rgba(1, 26, 52, 0.7),
       rgba(54, 249, 211, 0.7)
     ),
-    url(../img/about-large.jpg);
+    url(../img/about-small.jpg);
 
   &__text-box {
     padding: 9.6rem 3.2rem;
+  }
+
+  @media (min-resolution: 192dpi) and (min-width: 37.6em),
+    (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em) {
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(1, 26, 52, 0.7),
+        rgba(54, 249, 211, 0.7)
+      ),
+      url(../img/about-large.jpg);
   }
 }
 

@@ -4,8 +4,18 @@
       rgba(15, 39, 85, 0.95),
       rgba(11, 78, 82, 0.95)
     ),
-    url(../img/footer-large.jpg);
+    url(../img/footer-small.jpg);
   background-size: cover;
+
+  @media (min-resolution: 192dpi) and (min-width: 37.6em),
+    (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em) {
+    background-image: linear-gradient(
+      to right,
+      rgba(15, 39, 85, 0.95),
+      rgba(11, 78, 82, 0.95)
+    ),
+    url(../img/footer-large.jpg);
+  }
 
   &__logo-box {
     text-align: center;

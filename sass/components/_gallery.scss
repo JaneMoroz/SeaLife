@@ -168,11 +168,11 @@
     }
 
     @include respond(tab-port) {
-      top: 55%;
+      top: 40%;
     }
 
     @include respond(phone) {
-      top: 75%;
+      top: 50%;
     }
   }
 

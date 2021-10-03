@@ -407,10 +407,10 @@ body {
       top: 37%; } }
   @media (max-width: 56.25em) {
     .gallery__item--5 .gallery__testimonial {
-      top: 55%; } }
+      top: 40%; } }
   @media (max-width: 37.5em) {
     .gallery__item--5 .gallery__testimonial {
-      top: 75%; } }
+      top: 50%; } }
   .gallery__testimonial-name {
     display: block;
     margin-top: 1.2rem;
@@ -561,8 +561,11 @@ body {
   background-color: #fff; }
 
 .footer {
-  background-image: linear-gradient(to right, rgba(15, 39, 85, 0.95), rgba(11, 78, 82, 0.95)), url(../img/footer-large.jpg);
+  background-image: linear-gradient(to right, rgba(15, 39, 85, 0.95), rgba(11, 78, 82, 0.95)), url(../img/footer-small.jpg);
   background-size: cover; }
+  @media (min-resolution: 192dpi) and (min-width: 37.6em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em) {
+    .footer {
+      background-image: linear-gradient(to right, rgba(15, 39, 85, 0.95), rgba(11, 78, 82, 0.95)), url(../img/footer-large.jpg); } }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem;
@@ -657,7 +660,7 @@ body {
   .navigation__social-links {
     position: absolute;
     bottom: 10%;
-    right: 2%;
+    right: 10%;
     display: flex;
     flex-direction: column;
     gap: 2.4rem; }
@@ -754,9 +757,12 @@ body {
 
 .section-about {
   margin-top: 3.2rem;
-  background-image: linear-gradient(to bottom right, rgba(1, 26, 52, 0.7), rgba(54, 249, 211, 0.7)), url(../img/about-large.jpg); }
+  background-image: linear-gradient(to bottom right, rgba(1, 26, 52, 0.7), rgba(54, 249, 211, 0.7)), url(../img/about-small.jpg); }
   .section-about__text-box {
     padding: 9.6rem 3.2rem; }
+  @media (min-resolution: 192dpi) and (min-width: 37.6em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em) {
+    .section-about {
+      background-image: linear-gradient(to bottom right, rgba(1, 26, 52, 0.7), rgba(54, 249, 211, 0.7)), url(../img/about-large.jpg); } }
 
 .section-diving {
   padding: 9.6rem 0; }

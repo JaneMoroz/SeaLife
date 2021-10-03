@@ -76,27 +76,69 @@
     <header class="header">
       <div class="header__slideshow-container">
         <div class="header__slide fade">
-          <img
-            src="img/hero/hero-1-large.jpg"
-            class="header__slide-img"
-            alt="Семья в океанариуме."
-          />
+          <picture>
+            <source
+              media="(max-width: 37.5em)"
+              srcset="img/hero/hero-1-small.jpg"
+            />
+            <source
+              media="(max-width: 75em))"
+              srcset="img/hero/hero-1-medium.jpg"
+            />
+            <source
+              media="(min-width: 76em)"
+              srcset="img/hero/hero-1-large.jpg"
+            />
+            <img
+              class="header__slide-img"
+              alt="Семья в океанариуме."
+              src="img/hero/hero-1-medium.jpg"
+            />
+          </picture>
         </div>
 
         <div class="header__slide fade">
-          <img
-            src="img/hero/hero-2-large.jpg"
-            class="header__slide-img"
-            alt="Акула плавает за стеклом."
-          />
+          <picture>
+            <source
+              media="(max-width: 37.5em)"
+              srcset="img/hero/hero-2-small.jpg"
+            />
+            <source
+              media="(max-width: 75em))"
+              srcset="img/hero/hero-2-medium.jpg"
+            />
+            <source
+              media="(min-width: 76em)"
+              srcset="img/hero/hero-2-large.jpg"
+            />
+            <img
+              class="header__slide-img"
+              alt="Семья в океанариуме."
+              src="img/hero/hero-2-medium.jpg"
+            />
+          </picture>
         </div>
 
         <div class="header__slide fade">
-          <img
-            src="img/hero/hero-3-large.jpg"
-            class="header__slide-img"
-            alt="Посетители на экскурсии в океанариуме."
-          />
+          <picture>
+            <source
+              media="(max-width: 37.5em)"
+              srcset="img/hero/hero-3-small.jpg"
+            />
+            <source
+              media="(max-width: 75em))"
+              srcset="img/hero/hero-3-medium.jpg"
+            />
+            <source
+              media="(min-width: 76em)"
+              srcset="img/hero/hero-3-large.jpg"
+            />
+            <img
+              class="header__slide-img"
+              alt="Семья в океанариуме."
+              src="img/hero/hero-3-medium.jpg"
+            />
+          </picture>
         </div>
 
         <div class="header__slide-img-layer"></div>
@@ -150,11 +192,21 @@
 
             <div class="show">
               <div class="show__img-box">
-                <img
-                  src="img/show/show-1-big.jpg"
-                  alt="Дайвер со скатом."
-                  class="show__img"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 37.5em)"
+                    srcset="img/show/show-1-small.jpg"
+                  />
+                  <source
+                    media="(min-width: 37.6em)"
+                    srcset="img/show/show-1-big.jpg"
+                  />
+                  <img
+                    src="img/show/show-1-big.jpg"
+                    alt="Дайвер со скатом."
+                    class="show__img"
+                  />
+                </picture>
                 <div class="show__layer"></div>
               </div>
               <div class="show__text-box">
@@ -171,11 +223,21 @@
 
             <div class="show">
               <div class="show__img-box">
-                <img
-                  src="img/show/show-2-big.jpg"
-                  alt="Дайвер со скатом."
-                  class="show__img"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 37.5em)"
+                    srcset="img/show/show-2-small.jpg"
+                  />
+                  <source
+                    media="(min-width: 37.6em)"
+                    srcset="img/show/show-2-big.jpg"
+                  />
+                  <img
+                    src="img/show/show-2-big.jpg"
+                    alt="Дайвер со скатом."
+                    class="show__img"
+                  />
+                </picture>
                 <div class="show__layer"></div>
               </div>
               <div class="show__text-box">
@@ -209,11 +271,21 @@
 
             <div class="show">
               <div class="show__img-box">
-                <img
-                  src="img/show/show-3-big.jpg"
-                  alt="Дайвер со скатом."
-                  class="show__img"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 37.5em)"
+                    srcset="img/show/show-3-small.jpg"
+                  />
+                  <source
+                    media="(min-width: 37.6em)"
+                    srcset="img/show/show-3-big.jpg"
+                  />
+                  <img
+                    src="img/show/show-3-big.jpg"
+                    alt="Дайвер со скатом."
+                    class="show__img"
+                  />
+                </picture>
                 <div class="show__layer"></div>
               </div>
               <div class="show__text-box">
@@ -230,11 +302,21 @@
 
             <div class="show">
               <div class="show__img-box">
-                <img
-                  src="img/show/show-4-big.jpg"
-                  alt="Дайвер со скатом."
-                  class="show__img"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 37.5em)"
+                    srcset="img/show/show-4-small.jpg"
+                  />
+                  <source
+                    media="(min-width: 37.6em)"
+                    srcset="img/show/show-4-big.jpg"
+                  />
+                  <img
+                    src="img/show/show-4-big.jpg"
+                    alt="Дайвер со скатом."
+                    class="show__img"
+                  />
+                </picture>
                 <div class="show__layer"></div>
               </div>
               <div class="show__text-box">
@@ -456,11 +538,21 @@
 
           <div class="gallery">
             <figure class="gallery__item gallery__item--5">
-              <img
-                src="img/diving/diving-5-large.jpg"
-                alt="Дайвинг 5"
-                class="gallery__img"
-              />
+              <picture>
+                <source
+                  media="(max-width: 37.5em)"
+                  srcset="img/diving/diving-5-small.jpg"
+                />
+                <source
+                  media="(min-width: 37.6em)"
+                  srcset="img/diving/diving-5-large.jpg"
+                />
+                <img
+                  src="img/diving/diving-5-large.jpg"
+                  alt="Дайвинг 5"
+                  class="gallery__img"
+                />
+              </picture>
               <div class="gallery__img-layer"></div>
               <div class="gallery__testimonial">
                 Был приятно удивлен возможностями для дайвинга в Москве.
@@ -499,11 +591,21 @@
             </figure>
 
             <figure class="gallery__item gallery__item--1">
-              <img
-                src="img/diving/diving-1-large.jpg"
-                alt="Дайвинг 1"
-                class="gallery__img"
-              />
+              <picture>
+                <source
+                  media="(max-width: 37.5em)"
+                  srcset="img/diving/diving-1-small.jpg"
+                />
+                <source
+                  media="(min-width: 37.6em)"
+                  srcset="img/diving/diving-1-large.jpg"
+                />
+                <img
+                  src="img/diving/diving-1-large.jpg"
+                  alt="Дайвинг 1"
+                  class="gallery__img"
+                />
+              </picture>
               <div class="gallery__img-layer"></div>
               <div class="gallery__testimonial">
                 Все очень понравилось. Раньше дайвингом не занималась. Хорошая
@@ -541,11 +643,21 @@
             </figure>
 
             <figure class="gallery__item gallery__item--2">
-              <img
-                src="img/diving/diving-2-large.jpg"
-                alt="Дайвинг 2"
-                class="gallery__img"
-              />
+              <picture>
+                <source
+                  media="(max-width: 37.5em)"
+                  srcset="img/diving/diving-2-small.jpg"
+                />
+                <source
+                  media="(min-width: 37.6em)"
+                  srcset="img/diving/diving-2-large.jpg"
+                />
+                <img
+                  src="img/diving/diving-2-large.jpg"
+                  alt="Дайвинг 2"
+                  class="gallery__img"
+                />
+              </picture>
               <div class="gallery__img-layer"></div>
               <div class="gallery__testimonial">
                 Получил в подарок от близкого человека погружение в океанариум.
@@ -584,11 +696,21 @@
             </figure>
 
             <figure class="gallery__item gallery__item--3">
-              <img
-                src="img/diving/diving-3-large.jpg"
-                alt="Дайвинг 3"
-                class="gallery__img"
-              />
+              <picture>
+                <source
+                  media="(max-width: 37.5em)"
+                  srcset="img/diving/diving-3-small.jpg"
+                />
+                <source
+                  media="(min-width: 37.6em)"
+                  srcset="img/diving/diving-3-large.jpg"
+                />
+                <img
+                  src="img/diving/diving-3-large.jpg"
+                  alt="Дайвинг 3"
+                  class="gallery__img"
+                />
+              </picture>
               <div class="gallery__img-layer"></div>
               <div class="gallery__testimonial">
                 Прекрасное место для расслабленного дайвинга - отличная команда,
@@ -627,11 +749,21 @@
             </figure>
 
             <figure class="gallery__item gallery__item--4">
-              <img
-                src="img/diving/diving-4-large.jpg"
-                alt="Дайвинг 4"
-                class="gallery__img"
-              />
+              <picture>
+                <source
+                  media="(max-width: 37.5em)"
+                  srcset="img/diving/diving-4-small.jpg"
+                />
+                <source
+                  media="(min-width: 37.6em)"
+                  srcset="img/diving/diving-4-large.jpg"
+                />
+                <img
+                  src="img/diving/diving-4-large.jpg"
+                  alt="Дайвинг 4"
+                  class="gallery__img"
+                />
+              </picture>
               <div class="gallery__img-layer"></div>
               <div class="gallery__testimonial">
                 Очень интересно оказалось потрогать мягонькое брюшко ската и
