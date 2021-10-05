@@ -34,7 +34,7 @@
     box-shadow: 2rem 4rem 8rem rgba($color-black, 0.15);
     z-index: 10;
 
-    @include respond(tab-land) {
+    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
       width: 100%;
       position: relative;
     }
@@ -42,7 +42,8 @@
     &--1 {
       transform: translate(90%, 40%);
 
-      @include respond(tab-land) {
+      @media only screen and (max-width: 56.25em),
+        only screen and (hover: none) {
         transform: translate(0, 0);
       }
     }
@@ -50,7 +51,8 @@
     &--2 {
       transform: translate(0%, 70%);
 
-      @include respond(tab-land) {
+      @media only screen and (max-width: 56.25em),
+        only screen and (hover: none) {
         transform: translate(0, 0);
       }
     }
@@ -58,11 +60,13 @@
     &--3 {
       transform: translate(130%, 190%);
 
-      @include respond(tab-land) {
+      @media only screen and (max-width: 56.25em),
+        only screen and (hover: none) {
         transform: translate(50%, 0);
       }
 
-      @include respond(tab-port) {
+      @media only screen and (max-width: 56.25em),
+        only screen and (hover: none) {
         transform: translate(0%, 0);
       }
     }
@@ -70,7 +74,8 @@
     &--4 {
       transform: translate(40%, 160%);
 
-      @include respond(tab-land) {
+      @media only screen and (max-width: 56.25em),
+        only screen and (hover: none) {
         grid-column: 3;
         transform: translate(-50%, 0);
       }
@@ -89,7 +94,8 @@
       width: 30%;
       transform: translate(215%, 40%);
 
-      @include respond(tab-land) {
+      @media only screen and (max-width: 56.25em),
+        only screen and (hover: none) {
         width: 100%;
         transform: translate(0, 0);
       }
@@ -152,7 +158,7 @@
     transition: all 0.5s;
     backface-visibility: hidden;
 
-    @include respond(tab-land) {
+    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
       position: relative;
       transform: translateY(0);
       opacity: 1;
@@ -160,7 +166,7 @@
   }
 
   &__item--5 &__testimonial {
-    @include respond(tab-land) {
+    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
       position: absolute;
       transform: translateY(0);
       opacity: 1;

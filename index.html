@@ -52,16 +52,16 @@
         <nav class="navigation__nav">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Афиша</a>
+              <a href="#shows" class="navigation__link">Афиша</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Океанариум</a>
+              <a href="#about" class="navigation__link">Океанариум</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Дайвинг</a>
+              <a href="#diving" class="navigation__link">Дайвинг</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Цены</a>
+              <a href="#prices" class="navigation__link">Цены</a>
             </li>
             <li class="navigation__item">
               <a href="#" class="navigation__link">Новости</a>
@@ -74,7 +74,7 @@
               >
             </li>
             <li class="navigation__additional-item">
-              <a href="#" class="navigation__additional-link">Контакты</a>
+              <a href="#footer" class="navigation__additional-link">Контакты</a>
             </li>
             <li class="navigation__additional-item">
               <a href="#" class="navigation__additional-link">Магазин</a>
@@ -203,7 +203,7 @@
     </header>
 
     <main>
-      <section class="section-shows">
+      <section class="section-shows" id="shows">
         <div class="container">
           <h2 class="heading-secondary">Афиша</h2>
           <div class="section-shows__grid">
@@ -249,7 +249,7 @@
                 <div class="show__details">
                   <i class="show__calendar-icon icon-basic-calendar"></i>
                   <p class="show__dates">3 - 15 Октября</p>
-                  <a href="#" class="btn btn--outlined">Подробнее</a>
+                  <a href="#popup" class="btn btn--outlined">Подробнее</a>
                 </div>
               </div>
             </div>
@@ -280,7 +280,7 @@
                 <div class="show__details">
                   <i class="show__calendar-icon icon-basic-calendar"></i>
                   <p class="show__dates">10 - 30 Октября</p>
-                  <a href="#" class="btn btn--outlined">Подробнее</a>
+                  <a href="#popup" class="btn btn--outlined">Подробнее</a>
                 </div>
               </div>
             </div>
@@ -328,7 +328,7 @@
                 <div class="show__details">
                   <i class="show__calendar-icon icon-basic-calendar"></i>
                   <p class="show__dates">15 - 25 Октября</p>
-                  <a href="#" class="btn btn--outlined">Подробнее</a>
+                  <a href="#popup" class="btn btn--outlined">Подробнее</a>
                 </div>
               </div>
             </div>
@@ -359,7 +359,7 @@
                 <div class="show__details">
                   <i class="show__calendar-icon icon-basic-calendar"></i>
                   <p class="show__dates">15 - 25 Октября</p>
-                  <a href="#" class="btn btn--outlined">Подробнее</a>
+                  <a href="#popup" class="btn btn--outlined">Подробнее</a>
                 </div>
               </div>
             </div>
@@ -367,7 +367,7 @@
         </div>
       </section>
 
-      <section class="section-about">
+      <section class="section-about" id="about">
         <div class="container section-about__text-box">
           <h2 class="heading-secondary u-center-text">Океан в городе</h2>
           <p class="paragraph">
@@ -388,7 +388,7 @@
         </div>
       </section>
 
-      <section class="section-diving">
+      <section class="section-diving" id="diving">
         <div class="container">
           <h2 class="heading-secondary">Дайвинг</h2>
           <p class="section-diving__additional-to-heading">
@@ -840,7 +840,7 @@
         </div>
       </section>
 
-      <section class="section-prices">
+      <section class="section-prices" id="prices">
         <div class="video">
           <video class="video__content" autoplay muted loop>
             <source src="img/video.mp4" type="video/mp4" />
@@ -910,7 +910,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container">
         <div class="footer__logo-box">
           <img src="img/logo.png" alt="logo" class="footer__logo" />
@@ -959,6 +959,39 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <picture class="popup__img-box">
+          <source media="(max-width: 37.5em)" srcset="img/popup-small.jpg" />
+          <source media="(min-width: 76em)" srcset="img/popup-large.jpg" />
+          <img
+            class="popup__img"
+            alt="Девушка наблюдает за рыбами через стекло аквариума."
+            src="img/popup-large.jpg"
+          />
+          <div class="popup__layer"></div>
+        </picture>
+        <div class="popup__text">
+          <a href="#show" class="popup__close">&times;</a>
+          <h2 class="heading-secondary">
+            Каждое шоу или экскурсия - уникальны!
+          </h2>
+          <p class="popup__details">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ea
+            doloribus perspiciatis cum autem temporibus provident, error,
+            tempora atque, voluptate consectetur. Commodi magni ipsum,
+            consequuntur repellendus explicabo vitae quidem quis qui culpa porro
+            illo. Aliquid temporibus aliquam dicta expedita ab. Suscipit maiores
+            obcaecati dignissimos velit libero ab unde placeat, exercitationem,
+            neque at repudiandae natus sed cum? Cupiditate, saepe quod.
+          </p>
+          <div class="popup__button">
+            <a href="#" class="btn btn--full">Купить билет</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       type="module"
