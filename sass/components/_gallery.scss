@@ -3,7 +3,7 @@
   position: relative;
   height: 80rem;
 
-  @include respond(tab-land) {
+  @media only screen and (max-width: 75em), only screen and (hover: none) {
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -34,7 +34,7 @@
     box-shadow: 2rem 4rem 8rem rgba($color-black, 0.15);
     z-index: 10;
 
-    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    @media only screen and (max-width: 75em), only screen and (hover: none)  {
       width: 100%;
       position: relative;
     }
@@ -42,8 +42,7 @@
     &--1 {
       transform: translate(90%, 40%);
 
-      @media only screen and (max-width: 56.25em),
-        only screen and (hover: none) {
+      @media only screen and (max-width: 75em), only screen and (hover: none)  {
         transform: translate(0, 0);
       }
     }
@@ -51,8 +50,7 @@
     &--2 {
       transform: translate(0%, 70%);
 
-      @media only screen and (max-width: 56.25em),
-        only screen and (hover: none) {
+      @media only screen and (max-width: 75em), only screen and (hover: none)  {
         transform: translate(0, 0);
       }
     }
@@ -60,13 +58,11 @@
     &--3 {
       transform: translate(130%, 190%);
 
-      @media only screen and (max-width: 56.25em),
-        only screen and (hover: none) {
+      @media only screen and (max-width: 75em), only screen and (hover: none)  {
         transform: translate(50%, 0);
       }
 
-      @media only screen and (max-width: 56.25em),
-        only screen and (hover: none) {
+      @include respond(tab-port) {
         transform: translate(0%, 0);
       }
     }
@@ -74,8 +70,7 @@
     &--4 {
       transform: translate(40%, 160%);
 
-      @media only screen and (max-width: 56.25em),
-        only screen and (hover: none) {
+      @media only screen and (max-width: 75em), only screen and (hover: none)  {
         grid-column: 3;
         transform: translate(-50%, 0);
       }
@@ -94,8 +89,7 @@
       width: 30%;
       transform: translate(215%, 40%);
 
-      @media only screen and (max-width: 56.25em),
-        only screen and (hover: none) {
+      @media only screen and (max-width: 75em), only screen and (hover: none)  {
         width: 100%;
         transform: translate(0, 0);
       }
@@ -115,8 +109,8 @@
       transform: scale(1);
       filter: blur(3px) brightness(60%);
 
-      @include respond(tab-land) {
-        transform: scale(1);
+      @media only screen and (max-width: 75em), only screen and (hover: none)  {
+        transform: scale(1.1);
         filter: none;
       }
     }
@@ -127,7 +121,7 @@
     transform: scale(1.1);
     transition: all 0.5s;
 
-    @include respond(tab-land) {
+    @media only screen and (max-width: 75em), only screen and (hover: none)  {
       margin-bottom: 2.4rem;
     }
   }
@@ -158,7 +152,7 @@
     transition: all 0.5s;
     backface-visibility: hidden;
 
-    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    @media only screen and (max-width: 75em), only screen and (hover: none)  {
       position: relative;
       transform: translateY(0);
       opacity: 1;
@@ -166,7 +160,7 @@
   }
 
   &__item--5 &__testimonial {
-    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    @media only screen and (max-width: 75em), only screen and (hover: none)  {
       position: absolute;
       transform: translateY(0);
       opacity: 1;

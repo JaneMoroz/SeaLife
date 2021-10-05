@@ -22,10 +22,10 @@ body {
       font-size: 5rem;
     }
 
-    @include respond(phone) {
-      font-size: 3rem;
-      width: 100%;
-    }
+    // @include respond(phone) {
+    //   font-size: 3rem;
+    //   width: 100%;
+    // }
   }
 
   &--sub {
@@ -41,9 +41,9 @@ body {
       font-size: 1.6rem;
     }
 
-    @include respond(phone) {
-      margin-bottom: 2.4rem;
-    }
+    // @include respond(phone) {
+    //   margin-bottom: 2.4rem;
+    // }
   }
 }
 
