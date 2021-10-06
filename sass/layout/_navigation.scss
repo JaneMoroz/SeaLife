@@ -187,6 +187,15 @@
         rgba(54, 249, 211, 0.9)
       );
     }
+
+    @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+      width: 100%;
+      background-image: linear-gradient(
+        to top,
+        rgba(1, 26, 52, 0.9),
+        rgba(54, 249, 211, 0.9)
+      );
+    }
   }
 
   &__checkbox:checked ~ &__background &__nav &__list {
@@ -194,7 +203,11 @@
     opacity: 1;
 
     @include respond(phone) {
-     transform: translateX(55%);
+      transform: translateX(50%);
+    }
+
+    @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+      transform: translateX(-100%);
     }
   }
 

@@ -848,12 +848,19 @@ body {
       .navigation__checkbox:checked ~ .navigation__background {
         width: 100vh;
         background-image: linear-gradient(to top, rgba(1, 26, 52, 0.9), rgba(54, 249, 211, 0.9)); } }
+    @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+      .navigation__checkbox:checked ~ .navigation__background {
+        width: 100%;
+        background-image: linear-gradient(to top, rgba(1, 26, 52, 0.9), rgba(54, 249, 211, 0.9)); } }
   .navigation__checkbox:checked ~ .navigation__background .navigation__nav .navigation__list {
     transform: translateX(0);
     opacity: 1; }
     @media only screen and (max-width: 37.5em) {
       .navigation__checkbox:checked ~ .navigation__background .navigation__nav .navigation__list {
-        transform: translateX(55%); } }
+        transform: translateX(50%); } }
+    @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+      .navigation__checkbox:checked ~ .navigation__background .navigation__nav .navigation__list {
+        transform: translateX(-100%); } }
   .navigation__checkbox:checked ~ .navigation__background .navigation__nav .navigation__additional-list {
     transform: translateX(10%);
     opacity: 1; }
