@@ -47,10 +47,7 @@ const slider = function () {
 
   const goToSlide = function (slide) {
     slides.forEach(
-      (s, i) =>
-        (s.style.transform = `translateX(${
-          100 * (i - slide)
-        }%)`)
+      (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
     );
   };
 
@@ -77,8 +74,8 @@ const slider = function () {
   };
 
   const init = function () {
-    goToSlide(0);
-    activateDot(0);
+    goToSlide(2);
+    activateDot(2);
   };
   init();
 
@@ -96,3 +93,26 @@ const slider = function () {
   });
 };
 slider();
+
+///////////////////////////////////////
+// Reveal sections
+const allSections = document.querySelectorAll(".section");
+
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+
+  entry.target.classList.remove("section--hidden");
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.15,
+});
+
+allSections.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add("section--hidden");
+});
