@@ -29,6 +29,8 @@
       rgba(54, 249, 211, 0.7)
     ),
     url(../img/about-large.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &__text-box {
     padding: 9.6rem 3.2rem;

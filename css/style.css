@@ -639,7 +639,7 @@ body {
     transition: transform 1s; }
   .header__slide-img {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     object-fit: cover; }
   .header__slide-img-layer {
     display: inline-block;
@@ -893,7 +893,9 @@ body {
 
 .section-about {
   margin-top: 3.2rem;
-  background-image: linear-gradient(to bottom right, rgba(1, 26, 52, 0.7), rgba(54, 249, 211, 0.7)), url(../img/about-large.jpg); }
+  background-image: linear-gradient(to bottom right, rgba(1, 26, 52, 0.7), rgba(54, 249, 211, 0.7)), url(../img/about-large.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
   .section-about__text-box {
     padding: 9.6rem 3.2rem; }
 
