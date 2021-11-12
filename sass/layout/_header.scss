@@ -2,8 +2,16 @@
   height: 100vh;
   position: relative;
 
+  &__slideshow-container {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+  }
+
   &__slide {
-    display: none;
+    position: absolute;
+    top: 0;
+    transition: transform 1s;
   }
 
   &__slide-img {
