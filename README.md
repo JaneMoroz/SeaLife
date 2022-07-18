@@ -1,5 +1,5 @@
 # 🐟 SeaLife
-A Website for Public Aquarium.
+A website for public aquarium.
 
 ## ℹ General info:
 This project was created after completing [Jonas Schmedtmann's "Advanced CSS Course" course](https://github.com/jonasschmedtmann/advanced-css-course)
